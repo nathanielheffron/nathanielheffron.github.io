@@ -46,10 +46,9 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
 </style>
 </head>
 <body>
-<nav class="nav"><div class="nav-inner"><div class="logo">Dolce</div><div><a href="#menu">Menu</a><a href="#order">Order</a></div></div></nav>
+<nav class="nav"><div class="nav-inner"><div class="logo">Nate's tiramisù</div><div><a href="#menu">Menu</a><a href="#order">Order</a></div></div></nav>
 
 <section class="section" id="menu">
-  <div class="section-head"><h2>The menu</h2><p>Five signature options. The names, descriptions, and prices below are placeholders you can customize.</p></div>
   <div class="menu">
     <article class="item"><div><span class="item-num">01</span><h3>Classic</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12</div></article>
     <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Pistachio-flavored mascarpone with an espresso base and roasted pistachio topping.</p></div><div class="price">$14</div></article>
@@ -62,9 +61,9 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
 <section class="section" id="order">
   <div class="order-wrap">
     <div class="order-copy">
-      <h2 style="margin-top:12px">Order.</h2>
+      <h2 style="margin-top:12px">Ordering time!</h2>
       <p>Select a flavor, choose your pickup date and time, and send your request. Payment to be made in cash, Venmo, or Zelle at pickup.</p>
-      <p><strong>Pickup hours</strong><br>Thursday–Sunday · 8am–5pm</p>
+      <p><strong>Pickup hours</strong><br>Monday–Sunday · 8am–5pm</p>
     </div>
     <form onsubmit="placeOrder(event)">
       <label for="flavor">Tiramisu</label>
@@ -78,7 +77,6 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
       <label for="name">Your name</label><input id="name" type="text" placeholder="Jane Smith" required>
       <label for="email">Email</label><input id="email" type="email" placeholder="jane@example.com" required>
       <button class="submit" type="submit">Request pickup</button>
-      <div class="note">Demo only — no payment or order is actually submitted.</div>
     </form>
   </div>
 </section>
