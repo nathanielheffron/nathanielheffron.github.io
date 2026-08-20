@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dolce — Tiramisu</title>
+<style>
+:root{
+  --ink:#2c241f; --muted:#756960; --cream:#f8f3ec; --paper:#fffdf9;
+  --coffee:#6f4a35; --line:#ded4c9; --accent:#b88a68;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+button,input{font:inherit}
+.nav{position:sticky;top:0;z-index:10;background:rgba(248,243,236,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;letter-spacing:.08em;text-transform:uppercase}
+.nav a{color:var(--ink);text-decoration:none;margin-left:26px;font-size:14px}
+.hero{max-width:1120px;margin:auto;padding:86px 24px 72px;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.eyebrow{font:12px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--coffee)}
+h1{font-size:clamp(54px,8vw,94px);line-height:.88;font-weight:400;margin:16px 0 26px}
+.hero p{max-width:510px;color:var(--muted);font-size:18px;line-height:1.7}
+.cta{display:inline-block;margin-top:14px;padding:14px 24px;background:var(--ink);color:white;text-decoration:none;font:13px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.hero-card{height:420px;border-radius:220px 220px 18px 18px;background:linear-gradient(145deg,#ead8c5,#b88761);position:relative;overflow:hidden;box-shadow:0 25px 60px rgba(55,38,26,.14)}
+.hero-card:before,.hero-card:after{content:"";position:absolute;left:10%;right:10%;height:42%;border-radius:50%;background:rgba(255,247,235,.55)}
+.hero-card:before{top:20%}.hero-card:after{top:48%;background:rgba(72,43,27,.28)}
+.section{max-width:1120px;margin:auto;padding:74px 24px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+h2{font-size:42px;font-weight:400;margin:0}.section-head p{color:var(--muted);max-width:420px;line-height:1.6}
+.menu{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.item{background:var(--paper);border:1px solid var(--line);padding:22px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}
+.item:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(55,38,26,.08)}
+.item-num{font:11px Arial,sans-serif;color:var(--accent);letter-spacing:.12em}.item h3{font-size:24px;font-weight:400;margin:45px 0 8px}.item p{font:14px Arial,sans-serif;line-height:1.55;color:var(--muted);margin:0}.price{font:14px Arial,sans-serif;margin-top:20px}
+.order-wrap{background:var(--paper);border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:0}
+.order-copy{padding:42px}.order-copy p{color:var(--muted);line-height:1.65}
+form{padding:42px;border-left:1px solid var(--line)}
+label{display:block;font:12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px}
+select,input{width:100%;padding:13px 12px;border:1px solid var(--line);background:white;color:var(--ink);margin-bottom:20px;outline:none}
+select:focus,input:focus{border-color:var(--coffee)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.submit{width:100%;padding:15px;border:0;background:var(--ink);color:#fff;cursor:pointer;font:13px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.note{font:12px Arial,sans-serif;color:var(--muted);margin-top:14px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:var(--muted);font:12px Arial,sans-serif}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:35px}.hero-card{height:300px}.menu{grid-template-columns:repeat(2,1fr)}.order-wrap{grid-template-columns:1fr}form{border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:560px){.nav a{margin-left:12px}.hero{padding-top:55px}.menu{grid-template-columns:1fr}.section{padding:55px 18px}.hero{padding-left:18px;padding-right:18px}.nav-inner{padding:15px 18px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><div class="logo">Dolce</div><div><a href="#menu">Menu</a><a href="#order">Order</a></div></div></nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Handcrafted tiramisu · made to order</div>
+    <h1>Little layers<br>of joy.</h1>
+    <p>Classic Italian comfort, made fresh in small batches. Choose your favorite flavor and reserve a pickup time that works for you.</p>
+    <a class="cta" href="#order">Reserve a tiramisu</a>
+  </div>
+  <div class="hero-card" aria-label="Decorative tiramisu illustration"></div>
+</header>
+
+<section class="section" id="menu">
+  <div class="section-head"><h2>The menu</h2><p>Five signature options. The names, descriptions, and prices below are placeholders you can customize.</p></div>
+  <div class="menu">
+    <article class="item"><div><span class="item-num">01</span><h3>Classico</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12</div></article>
+    <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Silky mascarpone layered with roasted pistachio and espresso.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">03</span><h3>Chocolate</h3><p>Dark chocolate cream, espresso, cocoa, and chocolate curls.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">04</span><h3>Strawberry</h3><p>Fresh strawberry, vanilla mascarpone, and delicate cocoa.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">05</span><h3>Seasonal</h3><p>A rotating chef's flavor inspired by the season.</p></div><div class="price">$15</div></article>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <div class="order-wrap">
+    <div class="order-copy">
+      <div class="eyebrow">Pickup</div>
+      <h2 style="margin-top:12px">Make it yours.</h2>
+      <p>Select a flavor, choose your pickup date and time, and send your request. This prototype is ready to connect to your preferred payment/order system.</p>
+      <p><strong>Pickup hours</strong><br>Thursday–Sunday · 11am–6pm</p>
+    </div>
+    <form onsubmit="placeOrder(event)">
+      <label for="flavor">Tiramisu</label>
+      <select id="flavor" required>
+        <option>Classico — $12</option><option>Pistachio — $14</option><option>Chocolate — $14</option><option>Strawberry — $14</option><option>Seasonal — $15</option>
+      </select>
+      <div class="row">
+        <div><label for="date">Pickup date</label><input id="date" type="date" required></div>
+        <div><label for="time">Pickup time</label><input id="time" type="time" min="11:00" max="18:00" step="1800" required></div>
+      </div>
+      <label for="name">Your name</label><input id="name" type="text" placeholder="Jane Smith" required>
+      <label for="email">Email</label><input id="email" type="email" placeholder="jane@example.com" required>
+      <button class="submit" type="submit">Request pickup</button>
+      <div class="note">Demo only — no payment or order is actually submitted.</div>
+    </form>
+  </div>
+</section>
+
+<footer>Dolce · Handcrafted tiramisu · Made with care</footer>
+
+<script>
+const date = document.getElementById('date');
+const today = new Date();
+date.min = today.toISOString().split('T')[0];
+
+function placeOrder(e){
+  e.preventDefault();
+  const flavor = document.getElementById('flavor').value;
+  const d = document.getElementById('date').value;
+  const t = document.getElementById('time').value;
+  const name = document.getElementById('name').value;
+  alert(`Thanks, ${name}!\\n\\nYour ${flavor.split(' — ')[0]} pickup request is set for ${d} at ${t}.\\n\\nThis is a design prototype; connect the form to your order system to accept real orders.`);
+}
+</script>
+</body>
+</html>
