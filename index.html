@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dolce — Tiramisu</title>
+<title>Nate's tiramisù</title>
 <style>
 :root{
   --ink:#2c241f; --muted:#756960; --cream:#f8f3ec; --paper:#fffdf9;
@@ -48,43 +48,32 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
 <body>
 <nav class="nav"><div class="nav-inner"><div class="logo">Dolce</div><div><a href="#menu">Menu</a><a href="#order">Order</a></div></div></nav>
 
-<header class="hero">
-  <div>
-    <div class="eyebrow">Handcrafted tiramisu · made to order</div>
-    <h1>Little layers<br>of joy.</h1>
-    <p>Classic Italian comfort, made fresh in small batches. Choose your favorite flavor and reserve a pickup time that works for you.</p>
-    <a class="cta" href="#order">Reserve a tiramisu</a>
-  </div>
-  <div class="hero-card" aria-label="Decorative tiramisu illustration"></div>
-</header>
-
 <section class="section" id="menu">
   <div class="section-head"><h2>The menu</h2><p>Five signature options. The names, descriptions, and prices below are placeholders you can customize.</p></div>
   <div class="menu">
-    <article class="item"><div><span class="item-num">01</span><h3>Classico</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12</div></article>
-    <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Silky mascarpone layered with roasted pistachio and espresso.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">03</span><h3>Chocolate</h3><p>Dark chocolate cream, espresso, cocoa, and chocolate curls.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">04</span><h3>Strawberry</h3><p>Fresh strawberry, vanilla mascarpone, and delicate cocoa.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">05</span><h3>Seasonal</h3><p>A rotating chef's flavor inspired by the season.</p></div><div class="price">$15</div></article>
+    <article class="item"><div><span class="item-num">01</span><h3>Classic</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12</div></article>
+    <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Pistachio-flavored mascarpone with an espresso base and roasted pistachio topping.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">03</span><h3>Lemon</h3><p>Based around lemon curd and syrup instead of espresso, with lemon zest and white chocolate garnish.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">04</span><h3>Strawberry</h3><p>Strawberry-soaked ladyfingers, vanilla mascarpone, and a fresh strawberry top.</p></div><div class="price">$14</div></article>
+    <article class="item"><div><span class="item-num">05</span><h3>Seasonal</h3><p>Flavor depends on the season!</p></div><div class="price">$15</div></article>
   </div>
 </section>
 
 <section class="section" id="order">
   <div class="order-wrap">
     <div class="order-copy">
-      <div class="eyebrow">Pickup</div>
-      <h2 style="margin-top:12px">Make it yours.</h2>
-      <p>Select a flavor, choose your pickup date and time, and send your request. This prototype is ready to connect to your preferred payment/order system.</p>
-      <p><strong>Pickup hours</strong><br>Thursday–Sunday · 11am–6pm</p>
+      <h2 style="margin-top:12px">Order.</h2>
+      <p>Select a flavor, choose your pickup date and time, and send your request. Payment to be made in cash, Venmo, or Zelle at pickup.</p>
+      <p><strong>Pickup hours</strong><br>Thursday–Sunday · 8am–5pm</p>
     </div>
     <form onsubmit="placeOrder(event)">
       <label for="flavor">Tiramisu</label>
       <select id="flavor" required>
-        <option>Classico — $12</option><option>Pistachio — $14</option><option>Chocolate — $14</option><option>Strawberry — $14</option><option>Seasonal — $15</option>
+        <option>Classic — $12</option><option>Pistachio — $14</option><option>Lemon — $14</option><option>Strawberry — $14</option><option>Seasonal — $15</option>
       </select>
       <div class="row">
         <div><label for="date">Pickup date</label><input id="date" type="date" required></div>
-        <div><label for="time">Pickup time</label><input id="time" type="time" min="11:00" max="18:00" step="1800" required></div>
+        <div><label for="time">Pickup time</label><input id="time" type="time" min="8:00" max="15:00" step="1800" required></div>
       </div>
       <label for="name">Your name</label><input id="name" type="text" placeholder="Jane Smith" required>
       <label for="email">Email</label><input id="email" type="email" placeholder="jane@example.com" required>
@@ -94,7 +83,7 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
   </div>
 </section>
 
-<footer>Dolce · Handcrafted tiramisu · Made with care</footer>
+<footer>Nate's tiramisù</footer>
 
 <script>
 const date = document.getElementById('date');
