@@ -50,11 +50,11 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
 
 <section class="section" id="menu">
   <div class="menu">
-    <article class="item"><div><span class="item-num">01</span><h3>Classic</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12</div></article>
-    <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Pistachio-flavored mascarpone with an espresso base and roasted pistachio topping.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">03</span><h3>Lemon</h3><p>Based around lemon curd and syrup instead of espresso, with lemon zest and white chocolate garnish.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">04</span><h3>Strawberry</h3><p>Strawberry-soaked ladyfingers, vanilla mascarpone, and a fresh strawberry top.</p></div><div class="price">$14</div></article>
-    <article class="item"><div><span class="item-num">05</span><h3>Seasonal</h3><p>Flavor depends on the season!</p></div><div class="price">$15</div></article>
+    <article class="item"><div><span class="item-num">01</span><h3>Classic</h3><p>Espresso-soaked ladyfingers, mascarpone cream, cocoa.</p></div><div class="price">$12 full | $6 half</div></article>
+    <article class="item"><div><span class="item-num">02</span><h3>Pistachio</h3><p>Pistachio-flavored mascarpone with an espresso base and roasted pistachio topping.</p></div><div class="price">$14 full | $7 half</div></article>
+    <article class="item"><div><span class="item-num">03</span><h3>Lemon</h3><p>Based around lemon curd and syrup instead of espresso, with lemon zest and white chocolate garnish.</p></div><div class="price">$14 full | $7 half</div></article>
+    <article class="item"><div><span class="item-num">04</span><h3>Strawberry</h3><p>Strawberry-soaked ladyfingers, vanilla mascarpone, and a fresh strawberry top.</p></div><div class="price">$14 full | $7 half</div></article>
+    <article class="item"><div><span class="item-num">05</span><h3>Seasonal</h3><p>Flavor depends on the season!</p></div><div class="price">$15 full | $7.5 half</div></article>
   </div>
 </section>
 
@@ -68,14 +68,14 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;colo
     <form onsubmit="placeOrder(event)">
       <label for="flavor">Tiramisu</label>
       <select id="flavor" required>
-        <option>Classic — $12</option><option>Pistachio — $14</option><option>Lemon — $14</option><option>Strawberry — $14</option><option>Seasonal — $15</option>
+        <option>Classic — $12 full</option><option>Classic - $6 half</option><option>Pistachio — $14 full</option><option>Pistachio - $7 half</option><option>Lemon — $14 full</option><option>Lemon - $7 half</option><option>Strawberry — $14 full</option><option>Strawberry - $7 half</option><option>Seasonal — $15 full</option><option>Seasonal - $7.5 half</option>
       </select>
       <div class="row">
         <div><label for="date">Pickup date</label><input id="date" type="date" required></div>
         <div><label for="time">Pickup time</label><input id="time" type="time" min="8:00" max="15:00" step="1800" required></div>
       </div>
-      <label for="name">Your name</label><input id="name" type="text" placeholder="Jane Smith" required>
-      <label for="email">Email</label><input id="email" type="email" placeholder="jane@example.com" required>
+      <label for="name">Your name</label><input id="name" type="text" placeholder="Luciano Pavarotti" required>
+      <label for="email">Email</label><input id="email" type="email" placeholder="luciano@esempio.com" required>
       <button class="submit" type="submit">Request pickup</button>
     </form>
   </div>
